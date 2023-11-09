@@ -9,9 +9,9 @@ navItem.forEach((el) => {
   el.addEventListener("click", () => {
     navItem.forEach((item) => {
       if (item !== el) {
-        item.classList.remove("active");
+        item.classList.remove("bg-primary");
       }
     });
-    el.classList.toggle("active");
+    el.classList.toggle("bg-primary");
   });
 });

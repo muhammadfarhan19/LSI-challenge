@@ -4,6 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
 
     <link rel="stylesheet" href="./style.css" />
     <link
@@ -16,7 +24,7 @@
   <body>
     <div class="wrapper">
       <!-- Sidebar -->
-      <aside id="sidebar" class="collapsed">
+      <aside id="sidebar" class="collapsed bg-primary-subtle">
         <div class="h-100">
           <div class="sidebar-logo">
             <a href="#">MyApp</a>
@@ -24,9 +32,7 @@
           <!-- Sidebar Navigation -->
           <ul class="sidebar-nav">
             <li class="sidebar-item">
-              <a href="#" class="sidebar-link">
-                Profile
-              </a>
+              <a href="#" class="sidebar-link"> Profile </a>
             </li>
             <li class="sidebar-item">
               <a
@@ -109,10 +115,14 @@
       <!-- Main Component -->
       <div class="main">
         <nav class="navbar navbar-expand px-3 border-bottom">
+          <div class="container-fluid">
+            <button class="btn" type="button" data-bs-theme="light">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <a href="#" class="navbar-brand">Admin</a>
+          </div>
           <!-- Button for sidebar toggle -->
-          <button class="btn" type="button" data-bs-theme="light">
-            <span class="navbar-toggler-icon"></span>
-          </button>
         </nav>
         <main class="content px-3 py-2">
           <div class="container-fluid">
