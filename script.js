@@ -10,10 +10,10 @@ navItem.forEach((el) => {
     navItem.forEach((item) => {
       if (item !== el) {
         item.classList.remove("bg-primary-subtle");
-        item.classList.remove('text-black')
+        item.classList.remove("text-black");
       }
     });
     el.classList.toggle("bg-primary-subtle");
-    el.classList.toggle('text-black')
+    el.classList.toggle("text-black");
   });
 });
