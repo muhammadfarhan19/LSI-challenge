@@ -22,22 +22,29 @@
     />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper d-flex align-items-stretch w-100">
       <!-- Sidebar -->
-      <aside id="sidebar" class="collapsed bg-primary-subtle">
-        <div class="h-100">
-          <div class="sidebar-logo">
-            <a href="#">MyApp</a>
+      <aside id="sidebar" class="collapsed p-3 bg-primary">
+        <div class="h-100 d-flex flex-column gap-4">
+          <div class="sidebar-logo p-1 px-sm-4 py-sm-1">
+            <a href="#" class="text-decoration-none fs-4 text-light fw-bolder"
+              >MyApp</a
+            >
           </div>
           <!-- Sidebar Navigation -->
-          <ul class="sidebar-nav">
+          <ul class="sidebar-nav d-flex flex-column gap-2 p-0">
             <li class="sidebar-item">
-              <a href="#" class="sidebar-link"> Profile </a>
+              <a
+                href="#"
+                class="sidebar-link text-light position-relative d-block text-decoration-none px-4 py-3 rounded-4"
+              >
+                Profile
+              </a>
             </li>
             <li class="sidebar-item">
               <a
                 href="#"
-                class="sidebar-link collapsed"
+                class="sidebar-link text-light position-relative d-block text-decoration-none px-4 py-3 rounded-4 collapsed"
                 data-bs-toggle="collapse"
                 data-bs-target="#pages"
                 aria-expanded="false"
@@ -51,20 +58,32 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Analytics</a>
+                  <a
+                    href="#"
+                    class="sidebar-link text-light position-relative d-block text-decoration-none px-4 py-3 rounded-4"
+                    >Analytics</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Ecommerce</a>
+                  <a
+                    href="#"
+                    class="sidebar-link text-light position-relative d-block text-decoration-none px-4 py-3 rounded-4"
+                    >Ecommerce</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Crypto</a>
+                  <a
+                    href="#"
+                    class="sidebar-link text-light position-relative d-block text-decoration-none px-4 py-3 rounded-4"
+                    >Crypto</a
+                  >
                 </li>
               </ul>
             </li>
             <li class="sidebar-item">
               <a
                 href="#"
-                class="sidebar-link collapsed"
+                class="sidebar-link text-light position-relative d-block text-decoration-none px-4 py-3 rounded-4 collapsed"
                 data-bs-toggle="collapse"
                 data-bs-target="#dashboard"
                 aria-expanded="false"
@@ -78,17 +97,25 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Dashboard Analytics</a>
+                  <a
+                    href="#"
+                    class="sidebar-link text-light position-relative d-block text-decoration-none px-4 py-3 rounded-4"
+                    >Dashboard Analytics</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Dashboard Ecommerce</a>
+                  <a
+                    href="#"
+                    class="sidebar-link text-light position-relative d-block text-decoration-none px-4 py-3 rounded-4"
+                    >Dashboard Ecommerce</a
+                  >
                 </li>
               </ul>
             </li>
             <li class="sidebar-item">
               <a
                 href="#"
-                class="sidebar-link collapsed"
+                class="sidebar-link text-light position-relative d-block text-decoration-none px-4 py-3 rounded-4 collapsed"
                 data-bs-toggle="collapse"
                 data-bs-target="#auth"
                 aria-expanded="false"
@@ -102,10 +129,18 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Login</a>
+                  <a
+                    href="#"
+                    class="sidebar-link text-light position-relative d-block text-decoration-none px-4 py-3 rounded-4"
+                    >Login</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Register</a>
+                  <a
+                    href="#"
+                    class="sidebar-link text-light position-relative d-block text-decoration-none px-4 py-3 rounded-4"
+                    >Register</a
+                  >
                 </li>
               </ul>
             </li>
@@ -113,21 +148,153 @@
         </div>
       </aside>
       <!-- Main Component -->
-      <div class="main">
-        <nav class="navbar navbar-expand px-3 border-bottom">
+      <div
+        class="main d-flex flex-column min-vh-100 w-100 overflow-hidden"
+        style="transition: all 0.35s ease-in-out"
+      >
+        <nav class="navbar navbar-expand px-1 px-sm-3 border-bottom">
           <div class="container-fluid">
-            <button class="btn" type="button" data-bs-theme="light">
+            <button class="btn m-0" type="button" data-bs-theme="light">
               <span class="navbar-toggler-icon"></span>
             </button>
-            
-            <a href="#" class="navbar-brand">Admin</a>
+
+            <button class="navbar-brand border-0 p-1 px-sm-3 rounded btn-hover">Admin</button>
           </div>
           <!-- Button for sidebar toggle -->
         </nav>
-        <main class="content px-3 py-2">
-          <div class="container-fluid">
-            <div class="mb-3 bg-dark">
-              <h3>Bootstrap Sidebar Tutorial</h3>
+        <main class="content p-3 px-sm-5 py-sm-3">
+          <div class="container-fluid d-flex flex-column gap-2 gap-sm-4 p-0">
+            <div
+              class="p-0 py-lg-2 px-lg-0 d-flex justify-content-between align-items-center"
+            >
+              <h3 class="admin fw-bold">Admin Page</h3>
+              <button
+                class="py-2 px-4 border-0 rounded-3 bg-primary text-light fw-bold"
+              >
+                Add
+              </button>
+            </div>
+
+            <!-- input -->
+            <div class="row d-block d-sm-flex shadow-sm rounded-2 px-1 py-3">
+              <div class="col col-sm-6 mb-2 mb-md-0">
+                <input
+                  class="p-1 p-sm-2 w-100 border-0 bg-primary-subtle rounded-1"
+                  type="text"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="col col-sm-6 col-md-2 mb-2 mb-md-0">
+                <select
+                  name="Program Studi"
+                  id="Program Studi"
+                  class="p-1 p-sm-2 w-100 border-0 bg-primary-subtle rounded-1"
+                >
+                  <option class="bg-light" value="Program Studi">
+                    Program Studi
+                  </option>
+                  <option class="bg-light" value="Teknik Elektro">
+                    Teknik Elektro
+                  </option>
+                  <option class="bg-light" value="Teknik Informatika">
+                    Teknik Informatika
+                  </option>
+                  <option class="bg-light" value="Teknik Sipil">
+                    Teknik Sipil
+                  </option>
+                  <option class="bg-light" value="Teknik Mesin">
+                    Teknik Mesin
+                  </option>
+                  <option class="bg-light" value="Akuntansi">Akuntansi</option>
+                  <option class="bg-light" value="Manajemen">Manajemen</option>
+                </select>
+              </div>
+              <div class="col col-sm-6 col-md-2 mb-2 mb-md-0">
+                <select
+                  name="faculty"
+                  id="faculty"
+                  class="p-1 p-sm-2 w-100 border-0 bg-primary-subtle rounded-1"
+                >
+                  <option class="bg-light" value="Faculty">Faculty</option>
+                  <option class="bg-light" value="Teknik">Teknik</option>
+                  <option class="bg-light" value="Hukum">Hukum</option>
+                  <option class="bg-light" value="Ekonomi dan Bisnis">Ekonomi dan Bisnis</option>
+                </select>
+              </div>
+              <div class="col col-sm-6 col-md-2">
+                <button
+                  class="w-100 p-2 border-0 rounded-3 bg-primary text-light fw-bold"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+
+            <!-- table group -->
+            <div class="row d-block d-sm-flex gap-2 gap-sm-4 ">
+              <!-- small table -->
+              <div class="col col-lg-4 my-4 m-sm-0">
+                <table class="table border-1 shadow-sm rounded-2">
+                  <thead>
+                    <tr>
+                      <th scope="col">Category</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Mahasiswa</td>
+                      <td>5000</td>
+                    </tr>
+                    <tr>
+                      <td>Fakultas</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Program Studi</td>
+                      <td>6</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- big table -->
+              <div class="col-sm">
+                <table class="table border-1 shadow-sm rounded-2">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Program Studi</th>
+                      <th scope="col">Faculty</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Muhammad</td>
+                      <td>muhammad@mail.com</td>
+                      <td>Teknik Elektro</td>
+                      <td>Teknik</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Farhan</td>
+                      <td>farhan@mail.com</td>
+                      <td>Manajemen</td>
+                      <td>Ekonomi dan Bisnis</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Hamidie</td>
+                      <td>hamidie@mail.com</td>
+                      <td>Akutansi</td>
+                      <td>Ekonomi dan Bisnis</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </main>
